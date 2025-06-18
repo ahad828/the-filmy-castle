@@ -4,6 +4,14 @@
   <title>Upload - The Filmy Castle</title>
 </head>
 <body>
+
+<script>
+  const password = prompt("Enter admin password:");
+  if (password !== "filmy123") {
+    document.body.innerHTML = "<h2>Access Denied</h2>";
+  }
+</script>
+
   <h2>Upload Video</h2>
   <form method="post" enctype="multipart/form-data">
     <input type="file" name="video" />
