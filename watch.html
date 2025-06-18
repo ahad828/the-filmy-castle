@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch - The Filmy Castle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="videoTitle">Watch</h1>
+  </header>
+
+  <section class="player">
+    <iframe id="videoPlayer" width="100%" height="480" allow="autoplay" allowfullscreen></iframe>
+    <p id="description">Loading description...</p>
+  </section>
+
+  <section class="grid" id="relatedVideos">
+    <h2>Related Videos</h2>
+    <div class="video-card">
+      <a href="watch.html?id=1tct2cDjppoWODL1wM92mViTlamgxusRO&title=Taandob">
+        <img src="thumbnail-taandob.jpg" alt="Taandob">
+        <h3>Taandob</h3>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const videoId = params.get('id');
+    const title = params.get('title') || 'Watch';
+
+    document.getElementById('videoTitle').innerText = title;
+    document.getElementById('videoPlayer').src = `https://drive.google.com/file/d/${videoId}/preview`;
+
+    const descriptions = {
+      'Taandob': 'A gripping drama exploring deep human emotions, crime, and justice.'
+    };
+
+    document.getElementById('description').innerText = descriptions[title] || 'No description available.';
+  </script>
+</body>
+</html>

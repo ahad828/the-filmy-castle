@@ -1,9 +1,54 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #111;
-  color: white;
+  background-color: #141414;
+  color: #fff;
 }
-video {
-  margin-top: 20px;
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+header input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.video-card {
+  background: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.video-card:hover {
+  transform: scale(1.05);
+}
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.video-card h3 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.player {
+  padding: 1rem;
+  text-align: center;
+}
+.player iframe {
+  max-width: 100%;
 }

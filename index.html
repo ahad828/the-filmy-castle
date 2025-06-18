@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Filmy Castle</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body style="text-align: center; font-family: sans-serif;">
-  <h1>🏰 Welcome to The Filmy Castle</h1>
-  <p>Only admin can upload. Everyone can watch!</p>
+<body>
+  <header>
+    <h1>The Filmy Castle</h1>
+    <input type="text" id="searchBar" placeholder="Search movies..." />
+  </header>
 
-  <a href="movie.html">🎬 Movies</a> |
-  <a href="series.html">📺 Web Series</a> |
-  <a href="upload.html">⬆️ Upload (Admin)</a>
+  <section id="videoGrid" class="grid">
+    <div class="video-card" data-title="Taandob">
+      <a href="watch.html?id=1tct2cDjppoWODL1wM92mViTlamgxusRO&title=Taandob">
+        <img src="thumbnail-taandob.jpg" alt="Taandob">
+        <h3>Taandob</h3>
+      </a>
+    </div>
+  </section>
 </body>
 </html>
