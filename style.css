@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
 }
@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 header h1 {
@@ -62,7 +62,7 @@ header button:hover {
   background: linear-gradient(145deg, #1e1e1e, #292929);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .video-card:hover {
@@ -89,12 +89,12 @@ header button:hover {
 .player iframe {
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 p#description {
   margin-top: 1rem;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   padding: 1rem;
   border-radius: 10px;
 }

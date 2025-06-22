@@ -13,7 +13,7 @@ function askAI() {
   const description = prompt("Enter movie description:");
   if (!description) return;
 
-  const apiKey = "YOUR_OPENAI_API_KEY"; // এখানে তোমার API Key বসাও
+  const apiKey = "YOUR_OPENAI_API_KEY"; // Replace with your actual key
 
   fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
