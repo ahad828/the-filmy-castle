@@ -1,45 +1,73 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #141414;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
 }
+
 header {
-  background-color: #1c1c1c;
+  background-color: #111;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }
+
 header h1 {
-  color: #e50914;
-  font-size: 1.8rem;
+  color: #ff3d00;
+  font-size: 2rem;
   margin: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
 }
+
 header input {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 20px;
   border: none;
   width: 200px;
+  outline: none;
+  transition: 0.3s ease;
 }
+header input:focus {
+  width: 250px;
+  box-shadow: 0 0 10px #ff3d00;
+}
+
+header button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #ff3d00;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+header button:hover {
+  background: #ff5722;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
+
 .video-card {
-  background-color: #222;
-  border-radius: 10px;
+  background: linear-gradient(145deg, #1e1e1e, #292929);
+  border-radius: 15px;
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .video-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(229,9,20,0.5);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 61, 0, 0.6);
 }
 .video-card img {
   width: 100%;
@@ -50,12 +78,23 @@ header input {
   margin: 0;
   padding: 0.5rem;
   font-size: 1rem;
+  text-align: center;
+  color: #ffccbc;
 }
+
 .player {
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 .player iframe {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+p#description {
+  margin-top: 1rem;
+  background: rgba(0,0,0,0.4);
+  padding: 1rem;
+  border-radius: 10px;
 }
